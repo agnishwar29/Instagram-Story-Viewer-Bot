@@ -1,0 +1,2 @@
+next story button xpath = /html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/div[1]/section/div[1]/div/section/div/button[2]/div
+
