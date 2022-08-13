@@ -92,29 +92,6 @@ class StoryViewer:
 
         self.__target(profile)
 
-        # sleep = 3
-        #
-        # time.sleep(sleep)
-        # # go to search bar
-        # search_bar = driver.find_element(By.XPATH, '/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]'
-        #                                            '/div[1]/section/nav/div[2]/div/div/div[2]/input')
-        # search_bar.send_keys("arcturuschild")
-        # time.sleep(sleep)
-        #
-        # # click on first account on searchbar
-        # driver.find_element(By.XPATH,
-        #                     '/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/div[1]/section/nav/'
-        #                     'div[2]/div/div/div[2]/div[3]/div/div[2]/div/div[1]/a/div/div[2]/div[1]/div').click()
-        #
-        # time.sleep(sleep)
-        #
-        # # click on followers
-        # driver.find_element(By.XPATH, '/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/div[1]/'
-        #                               'section/main/div/header/section/ul/li[2]/a/div').click()
-        # time.sleep(sleep)
-
-
-
         # account xpath of n number of accounts
         p_xpaths = [
             f'/html/body/div[1]/div/div/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[2]/div[' \
