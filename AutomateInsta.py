@@ -16,7 +16,6 @@ class StoryViewer:
         password: password of the account to user
         target_profile : The profile to get follower list from
         n_profiles : The number of profiles to visit and view stories (This doesn't count number of stories)
-
     """
 
 
@@ -164,15 +163,25 @@ class StoryViewer:
                     while story != 0:
                         try:
                             if story == 15:
+                                # Clicking the like button
+                                driver.find_element(By.XPATH,
+                                                    '/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/div[1]/section/div[1]/div/section/div/div[3]/div/div/div[2]/span/button').click()
+                                time.sleep(1)
+
                                 # first next button in the story
                                 driver.find_element(By.XPATH,
                                                     '/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/div[1]/section/div[1]/div/section/div/button/div').click()
+
                                 story -= 1
                             else:
+                                # Clicking the like button
+                                driver.find_element(By.XPATH,
+                                                    '/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/div[1]/section/div[1]/div/section/div/div[3]/div/div/div[2]/span/button').click()
                                 time.sleep(1)
                                 # second next button in the story
                                 driver.find_element(By.XPATH,
                                                     '/html/body/div[1]/div/div/div/div[1]/div/div/div/div[1]/div[1]/section/div[1]/div/section/div/button[2]/div').click()
+
                                 story -= 1
                         except:
                             break
